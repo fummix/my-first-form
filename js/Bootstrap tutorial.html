@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Bootstrap tutorial</title>
+    <link href="./Bootstrap tutorial_files/bootstrap.min.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+</head>
+<body>
+    <div class="container-fluid">
+      
+        <div class="row">
+        <div class="col-sm-2">
+            <h2>Welcome to bootstrap</h2>
+            <button class="btn btn-primary  btn-ms">Sign up now</button>
+        </div>
+
+        <div class="col-sm-6">
+            <form><h1>Registration Form</h1>
+              <div class="row">
+<div class="col-sm-4">
+    <label>surname</label><br>
+    <label class="mt-2">last name</label><br>
+    <label class="mt-2">Email</label><br>
+    <label class="mt-2">Phone</label><br>
+    <label class="mt-2">DOB</label><br>
+    <label class="mt-2">Salary</label><br>
+</div>
+
+<div class="col-sm-8">
+    <input type="text"><br>
+    <input type="text" class="mt-2"><br>
+    <input type="email" class="mt-2"><br>
+    <input type="number" class="mt-2"><br>
+    <input type="date" class="mt-2"><br>
+    <input type="number" class="mt-2"><br>
+
+    <button class="btn btn-primary btn-lg mt-2">Submit</button>
+    
+
+</div>
+              </div>
+          </form>
+        </div>
+        <div class="col-sm-4">
+<p class=".text-warning .text-muted">This is another page I design</p>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+    </div>
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./Bootstrap tutorial_files/bootstrap.bundle.min.js.download"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
